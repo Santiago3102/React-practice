@@ -10,12 +10,12 @@
     border-radius: 20px;
     border: 8px solid rgb(19, 99, 9);
     margin-bottom: 15px;
-    transition: transform 0.3s ease, color 0.3s ease; /* Añadido para animaciones suaves */
+    transition: transform 0.3s ease, color 0.3s ease; 
   }
   
   .contador.animate {
-    transform: scale(1.2); /* Agranda el contador temporalmente */
-    color: rgb(255, 0, 0); /* Cambia el color temporalmente */
+    transform: scale(1.2); 
+    color: rgb(255, 231, 122); 
   }
   
   @media (max-width: 768px) {

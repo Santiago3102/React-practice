@@ -16,6 +16,12 @@ h1 {
   font-weight: 700;
   line-height: 1.1;
   margin: 40px 0;
+  color: #000; /* Color inicial del título (negro) */
+  transition: color 0.3s ease; /* Transición para el cambio de color */
+}
+
+h1:hover {
+  color: #ff0000; /* Color al pasar el mouse por encima (rojo) */
 }
 
 .App {
@@ -37,7 +43,7 @@ h1 {
 
 @media (max-width: 768px) {
   h1 {
-      font-size: 2em;
-      padding-bottom: 30px;
+    font-size: 2em;
+    padding-bottom: 30px;
   }
 }

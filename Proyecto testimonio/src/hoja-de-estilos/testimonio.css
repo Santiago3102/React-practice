@@ -6,9 +6,16 @@
   display: flex;
   flex-direction: column;
   background-color: #fff9f9; 
-  border: 3px solid blue;
-  border-radius: 60px;
+  border: 3px solid #000;
+  border-radius: 62px;
   box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.contenedor-testimonio:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px 2px rgb(0 0 0 / 15%);
+  border-color: #ffcc00; /* Amarillo olímpico */
 }
 
 .imagen-testimonio {
@@ -17,6 +24,21 @@
   height: auto;
   border-radius: 60px;
   margin: auto;
+  transition: transform 0.3s ease, outline 0.3s ease; /* Agregar transición para el outline */
+  outline: 3px solid transparent; /* Outline inicialmente transparente */
+}
+
+.contenedor-testimonio:hover .imagen-testimonio {
+  outline-color: #ffcc00; /* Color del outline al pasar el mouse por encima del contenedor */
+}
+
+
+.contenedor-testimonio:hover .imagen-testimonio {
+  border-color: #ffcc00; /* Color del borde al pasar el mouse por encima del contenedor */
+}
+
+.imagen-testimonio:hover {
+  transform: scale(1.05);
 }
 
 .contenedor-texto-testimonio {
@@ -32,21 +54,24 @@
   font-size: 1.3rem;
   padding-top: 10px;
   padding-bottom: 30px;
+  color: #0056b3; 
 }
 
 .texto-testimonio {
   font-size: 1.1rem;
   text-align: justify;
+  color: #00471b; 
 }
 
 @media (min-width: 768px) {
   .contenedor-testimonio {
-      flex-direction: row;
-      height: 368px;
+    flex-direction: row;
+    height: 368px;
   }
 
   .imagen-testimonio {
-      height: 368px;
-      width: 300px;
+    height: 368px;
+    width: 300px;
   }
 }
+
