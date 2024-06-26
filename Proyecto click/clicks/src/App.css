@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #ffffff;
+}
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  font-family: Lato, sans-serif;
+}
+
+.bootcamp-logo-contenedor {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.bootcamp-logo {
+  height: 100px;
+}
+
+.contenedor-principal {
+  height: 550px;
+  min-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .contenedor-principal {
+    height: auto;
+    min-width: 100%;
+    padding: 10px;
+  }
+  
+  .bootcamp-logo {
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedor-principal {
+    height: auto;
+    min-width: 100%;
+    padding: 5px;
+  }
+
+  .bootcamp-logo {
+    height: 60px;
+  }
+}

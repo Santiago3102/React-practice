@@ -1,0 +1,36 @@
+.contador {
+    min-width: 300px;
+    height: 300px;
+    font-size: 160px;
+    padding: 25px;
+    color: rgb(19, 99, 9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 8px solid rgb(19, 99, 9);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, color 0.3s ease; /* Añadido para animaciones suaves */
+  }
+  
+  .contador.animate {
+    transform: scale(1.2); /* Agranda el contador temporalmente */
+    color: rgb(255, 0, 0); /* Cambia el color temporalmente */
+  }
+  
+  @media (max-width: 768px) {
+    .contador {
+      min-width: 200px;
+      height: 200px;
+      font-size: 120px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contador {
+      min-width: 150px;
+      height: 150px;
+      font-size: 80px;
+    }
+  }
+  
